@@ -1,0 +1,58 @@
+/* Base layout */
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at center, #1a1a1a, #000);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Physics container */
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Boxes (physics objects) */
+.box {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    transition: transform 0.1s;
+    will-change: transform;
+}
+
+/* Controls UI */
+#controls {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* Buttons */
+button {
+    padding: 10px 14px;
+    margin: 5px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+/* Hover effect */
+button:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+/* Click effect */
+button:active {
+    transform: scale(0.95);
+}
